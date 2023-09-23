@@ -6,20 +6,27 @@
   padding: 20px 60px
   background: transparent
     
-  &.active
+  &.isActive
     background: var(--button-background-active)
     color: white
 
-  &:focus,&.active:focus
+  &:focus-visible,&.isActive:focus-visible
     background: var(--button-background)
     border: 1px solid var(--text-accent-color)
     color: var(--text-accent-color)
 
-  &:hover,&.active:hover
+  &:hover,&.isActive:hover
     background: var(--text-accent-color)
     padding: 21px 61px
     border: none
     color: white
+
+  &:active
+    background: var(--button-background-active)
+    color: white
+
+  &.isActive:active
+    color: black
 
 .fullWidth
   width: 100%

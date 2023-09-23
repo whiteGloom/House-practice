@@ -15,7 +15,7 @@ export const ButtonDefault: FC<IButtonDefaultProps> = (props) => {
       className={clsx([
         styles.buttonBase,
         props.useFullWidth && styles.fullWidth,
-        props.isActive && styles.active,
+        props.isActive && styles.isActive,
         className,
       ])}
       {...otherProps}

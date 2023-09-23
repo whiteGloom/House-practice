@@ -7,18 +7,25 @@
   border: none
   border-radius: 20px
     
-  &.active
+  &.isActive
     background: var(--button-background-active)
     color: white
 
-  &:focus,&.active:focus
+  &:focus-visible,&.isActive:focus-visible
     padding: 8px 18px
+    background: var(--button-background)
     border: 2px solid var(--text-accent-color)
     color: black
 
-  &:hover,&.active:hover
+  &:hover,&.isActive:hover
     background: var(--text-accent-color)
     color: white
+
+  &:active
+    background: var(--button-background-active)
+
+  &.isActive:active
+    color: black
 
 .fullWidth
   width: 100%
