@@ -1,0 +1,28 @@
+.linkBase
+  cursor: pointer
+  box-sizing: border-box
+  padding: 0 5px
+  color: black
+  border: none
+  background: transparent
+    
+  &.isActive
+    color: var(--button-background-active)
+
+  &:focus,&.isActive:focus
+    background: var(--button-background)
+    color: black
+
+  &:hover,&.isActive:hover
+    background: var(--text-accent-color)
+    color: white
+
+  &:active
+    color: black
+
+  &.isActive:active
+    color: black
+
+
+.fullWidth
+  width: 100%
