@@ -23,6 +23,8 @@
     "experimentalDecorators": true,
   },
   "include": [
-    "src"
+    "src",
+    ".eslintrc.js",
+    "react-app-env.d.ts"
   ]
 }
