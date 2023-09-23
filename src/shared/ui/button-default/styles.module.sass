@@ -1,0 +1,25 @@
+.buttonBase
+  cursor: pointer
+  box-sizing: border-box
+  border: 1px solid
+  border-color: var(--text-accent-color)
+  color: var(--text-accent-color)
+  padding: 21px 61px
+  background: transparent
+    
+  &.active
+    background: var(--button-background-active)
+    border-color: var(--button-background-active)
+    color: white
+
+  &:hover,&.active:hover
+    background: var(--text-accent-color)
+    color: white
+
+  &:focus,&.active:focus
+    background: var(--button-background)
+    border-color: var(--text-accent-color)
+    color: var(--text-accent-color)
+
+.fullWidth
+  width: 100%
