@@ -4,7 +4,7 @@ import {AppRouterProvider} from './providers/router';
 
 function App() {
   return (
-    <div className={'app'}>
+    <div className={'app light-theme'}>
       <AppRouterProvider/>
     </div>
   );
