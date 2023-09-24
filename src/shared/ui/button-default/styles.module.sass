@@ -1,32 +1,85 @@
 .buttonBase
   cursor: pointer
   box-sizing: border-box
-  border: 1px solid var(--text-accent-color)
-  color: var(--text-accent-color)
-  padding: 20px 60px
+
+.themePrimary
   background: transparent
-    
+  border: 1px solid
+  padding: 20px 60px
+  border-color: var(--text-accent-color)
+  color: var(--text-accent-color)
+  gap: 6px
+
   &.isActive
     background: var(--button-background-active)
     color: white
 
-  &:focus-visible,&.isActive:focus-visible
+  &:focus-visible, &.isActive:focus-visible
+    border: 1px solid
+    border-color: var(--text-accent-color)
     background: var(--button-background)
-    border: 1px solid var(--text-accent-color)
     color: var(--text-accent-color)
 
-  &:hover,&.isActive:hover
-    background: var(--text-accent-color)
+  &:hover, &.isActive:hover
     padding: 21px 61px
+    background: var(--text-accent-color)
     border: none
     color: white
 
-  &:active
+  &:active, &.isActive:active
     background: var(--button-background-active)
     color: white
 
+.themePromo
+  color: black
+  background: #EEDB6D
+  padding: 21px 61px
+  gap: 6px
+  border: none
+
+  &.isActive
+    background: #D9B949
+
+  &:focus-visible, &.isActive:focus-visible
+    padding: 20px 60px
+    border: 1px solid #A38314
+    background: #FAEB97
+
+  &:hover, &.isActive:hover
+    background: #FAEB97
+    border: none
+
+  &:active
+    background: #D9B949
+
   &.isActive:active
+    background: #D9B949
     color: black
+
+.themeTab
+  color: black
+  padding: 10px 20px
+  background: var(--button-background)
+  border: none
+  border-radius: 20px
+  gap: 6px
+
+  &.isActive
+    background: var(--button-background-active)
+    color: white
+
+  &:focus-visible, &.isActive:focus-visible
+    padding: 8px 18px
+    background: var(--button-background)
+    border: 2px solid var(--text-accent-color)
+    color: black
+
+  &:hover, &.isActive:hover
+    background: var(--text-accent-color)
+    color: white
+
+  &:active, &.isActive:active
+    background: var(--button-background-active)
 
 .fullWidth
   width: 100%
