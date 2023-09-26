@@ -4,6 +4,7 @@ import clsx from 'clsx';
 
 export interface ILinkTextProps extends PropsWithChildren, HTMLAttributes<HTMLAnchorElement> {
   isActive?: boolean,
+  href?: string,
 }
 
 export const LinkText: FC<ILinkTextProps> = (props) => {
@@ -16,6 +17,7 @@ export const LinkText: FC<ILinkTextProps> = (props) => {
         props.isActive && styles.isActive,
         className,
       ])}
+      href={props.href}
       {...otherProps}
     >
       {props.children}
