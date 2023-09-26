@@ -5,23 +5,21 @@
   color: black
   border: none
   background: transparent
+  text-decoration: none
+  transition: .2s color, .2s background
 
   &.isActive
     color: var(--button-background-active)
 
-  &:focus, &.isActive:focus
+  &:focus-visible, &.isActive:focus-visible
     background: var(--button-background)
     color: black
 
   &:hover, &.isActive:hover
-    background: var(--text-accent-color)
-    color: white
+    color: var(--text-accent-color)
 
-  &:active
-    color: black
-
-  &.isActive:active
-    color: black
+  &:active, &.isActive:active
+    color: #376B44
 
 
 .fullWidth
