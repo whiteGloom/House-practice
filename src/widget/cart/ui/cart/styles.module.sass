@@ -1,0 +1,47 @@
+.button
+  position: relative
+  background: transparent
+  border: none
+  cursor: pointer
+  transition: .2s color, .2s background, .2s stroke
+
+  *
+    transition: .2s color, .2s background, .2s stroke
+    stroke: #2C2D35
+
+  &.isActive
+    *
+      stroke: #376B44
+
+  &:focus-visible, &.isActive:focus-visible
+    background: #D4E8D9
+
+    *
+      stroke: #598D66
+
+  &:hover, &.isActive:hover
+    *
+      stroke: #598D66
+
+  &:active, &.isActive:active
+    *
+      stroke: #376B44
+
+.cardIcon
+  width: 22px
+  height: 22px
+
+.itemsCounterWrapper
+  position: absolute
+  border-radius: 6px
+  background: #598D66
+  height: 13px
+  top: 6px
+  padding: 0 4px 2px
+  box-sizing: border-box
+
+.itemsCounter
+  display: block
+  color: white
+  font-size: 10px
+  height: 10px
