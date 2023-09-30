@@ -2,11 +2,11 @@ import React, {FC, HTMLAttributes} from 'react';
 import {ReactComponent as ShoppingCartIcon} from './shopping-cart-icon.svg';
 import styles from './styles.module.sass';
 
-export interface BasketProps extends HTMLAttributes<HTMLButtonElement> {
+export interface ShoppingCartButtonProps extends HTMLAttributes<HTMLButtonElement> {
   itemsCount?: number;
 }
 
-export const Cart: FC<BasketProps> = (props) => {
+export const ShoppingCartButton: FC<ShoppingCartButtonProps> = (props) => {
   const {itemsCount = 0, ...otherProps} = props;
 
   return (
@@ -21,4 +21,4 @@ export const Cart: FC<BasketProps> = (props) => {
   );
 };
 
-export default Cart;
+export default ShoppingCartButton;

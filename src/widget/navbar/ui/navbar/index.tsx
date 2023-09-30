@@ -2,7 +2,7 @@ import React, {FC} from 'react';
 import styles from './styles.module.sass';
 import {ReactComponent as LogoIcon} from './logo-icon.svg';
 import LinkText from '../../../../shared/ui/link-text';
-import Cart from '../../../cart/ui/cart';
+import ShoppingCartButton from '../../../../features/shopping-cart-button/ui/shopping-cart-button';
 
 export const Navbar: FC = () => {
   return (
@@ -15,7 +15,7 @@ export const Navbar: FC = () => {
         <LinkText href={'#'}>Репродукции</LinkText>
         <LinkText href={'#'}>Новинки</LinkText>
         <LinkText href={'#'}>О нас</LinkText>
-        <Cart itemsCount={3} />
+        <ShoppingCartButton itemsCount={3} />
       </div>
     </nav>
   );
