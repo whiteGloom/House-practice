@@ -1,12 +1,35 @@
 .linkBase
   cursor: pointer
   box-sizing: border-box
+  transition: .2s color, .2s background
+
+.themePrimary
+  border: none
   padding: 0 5px
   color: black
-  border: none
   background: transparent
   text-decoration: none
-  transition: .2s color, .2s background
+  font-size: 20px
+
+  &.isActive
+    color: var(--button-background-active)
+
+  &:focus-visible, &.isActive:focus-visible
+    background: var(--button-background)
+    color: black
+
+  &:hover, &.isActive:hover
+    color: var(--text-accent-color)
+
+  &:active, &.isActive:active
+    color: #376B44
+
+.themeMinor
+  border: none
+  color: #86928B
+  background: transparent
+  text-decoration: none
+  font-size: 18px
 
   &.isActive
     color: var(--button-background-active)
