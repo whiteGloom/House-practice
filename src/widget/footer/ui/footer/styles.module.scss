@@ -1,0 +1,131 @@
+.footer {
+  background: #E1EDE6;
+  padding: 23px 30px;
+}
+
+.content {
+  margin: 0 auto;
+  display: grid;
+  max-width: 1110px;
+  grid-auto-rows: max-content;
+  grid-template-columns: repeat(4, max-content) 1fr max-content;
+  grid-template-areas:
+    'logo origins newProducts about . socials'
+    'contacts origins newProducts about . socials';
+
+  @media screen and (max-width: 1000px) {
+    grid-template-columns: repeat(3, max-content) 1fr max-content;
+    grid-template-areas:
+      'logo logo logo . contacts'
+      'origins newProducts about . socials';
+  }
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: max-content 1fr max-content 1fr max-content;
+    grid-template-areas:
+      'logo logo . contacts contacts'
+      'origins . newProducts . about'
+      'socials socials socials socials socials';
+  }
+
+  @media screen and (max-width: 620px) {
+    row-gap: 20px;
+    grid-template-columns: max-content 1fr max-content;
+    grid-template-areas:
+      'logo logo logo'
+      'contacts . origins'
+      'newProducts . about'
+      'socials socials socials';
+  }
+}
+
+.logo {
+  grid-area: logo;
+  margin-right: 115px;
+
+  @media screen and (max-width: 1000px) {
+    margin-right: 60px;
+    margin-bottom: 30px;
+  }
+}
+
+.contactsWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  white-space: nowrap;
+  grid-area: contacts;
+  margin-right: 115px;
+
+  @media screen and (max-width: 1000px) {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+}
+
+.socialsWrapper {
+  display: flex;
+  flex-direction: column;
+  grid-area: socials;
+  gap: 10px;
+
+  @media screen and (max-width: 768px) {
+    align-items: center;
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid #C3D1C6
+  }
+
+  @media screen and (max-width: 620px) {
+    margin-top: 0;
+  }
+}
+
+.socialsIcons {
+  display: flex;
+  gap: 30px;
+}
+
+.licenses {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: row;
+  }
+}
+
+.aboutWrapper {
+  grid-area: about;
+  margin-right: 60px;
+}
+
+.newProductsWrapper {
+  grid-area: newProducts;
+  margin-right: 60px;
+}
+
+.origins {
+  grid-area: origins;
+  margin-right: 60px;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+  @media screen and (max-width: 1000px) {
+    margin-top: 30px;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-top: 0;
+  }
+}
+
+.blockTitle {
+  font-size: 20px;
+  color: #2C2D35;
+}
