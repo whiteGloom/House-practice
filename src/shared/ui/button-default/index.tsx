@@ -27,6 +27,7 @@ function getThemeClassName(theme: EButtonDefaultTheme = EButtonDefaultTheme.prim
 
 export const ButtonDefault: FC<IButtonDefaultProps> = (props) => {
   const {
+    children,
     className,
     theme = EButtonDefaultTheme.primary,
     ...otherProps
@@ -43,7 +44,7 @@ export const ButtonDefault: FC<IButtonDefaultProps> = (props) => {
       ])}
       {...otherProps}
     >
-      {props.children}
+      {children}
     </button>
   );
 };
