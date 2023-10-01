@@ -63,6 +63,10 @@
   }
 }
 
+.contactDetail {
+  color: #86928B;
+}
+
 .socialsWrapper {
   display: flex;
   flex-direction: column;
@@ -84,6 +88,16 @@
 .socialsIcons {
   display: flex;
   gap: 30px;
+}
+
+.socialIcon {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
 }
 
 .licenses {
