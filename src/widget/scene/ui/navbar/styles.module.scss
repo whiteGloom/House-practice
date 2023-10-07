@@ -1,0 +1,89 @@
+.menu {
+  background: var(--background-accent-color);
+  padding: 33px 30px 32px;
+
+  @media screen and (max-width: 768px) {
+    padding: 16px 33px;
+  }
+
+  @media screen and (max-width: 620px) {
+    padding: 0;
+  }
+}
+
+.sizeLimiter {
+  display: flex;
+  max-width: 1110px;
+  margin: 0 auto;
+  justify-content: space-between;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    gap: 16px
+  }
+
+  @media screen and (max-width: 620px) {
+    gap: 0;
+  }
+}
+
+.logoWrapper {
+  display: flex;
+
+  @media screen and (max-width: 768px) {
+    justify-content: center;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #C3D1C6;
+  }
+
+  @media screen and (max-width: 620px) {
+    padding: 17px 15px 16px;
+    background: white;
+    border: none;
+  }
+}
+
+.content {
+  position: relative;
+  display: flex;
+  gap: 60px;
+  justify-content: space-between;
+
+  @media screen and (max-width: 620px) {
+    padding: 16px;
+  }
+}
+
+.routerWrapper {
+  display: flex;
+  align-items: center;
+  gap: 54px;
+
+  @media screen and (max-width: 620px) {
+    display: none;
+  }
+}
+
+.burgerMenu {
+  display: none;
+
+  @media screen and (max-width: 620px) {
+    display: block;
+  }
+}
+
+.basketWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.burgerButton {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}

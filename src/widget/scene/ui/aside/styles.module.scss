@@ -1,0 +1,39 @@
+.burgerButton {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.aside {
+  display: none;
+  flex-direction: column;
+  background: #E1EDE6;
+  position: absolute;
+  width: 100vw;
+  left: -105%;
+  top: 68px;
+  bottom: 0;
+  padding: 16px 15px;
+  gap: 30px;
+  box-sizing: border-box;
+  transition: .3s left;
+
+  @media screen and (max-width: 620px) {
+    display: flex;
+  }
+}
+
+.asideOpened {
+  left: 0;
+}
+
+.asideRouterWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
