@@ -4,6 +4,13 @@
   flex-direction: column;
 }
 
-.article {
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
   flex-grow: 1;
+  overflow: auto;
+
+  &.disableScroll {
+    overflow: hidden;
+  }
 }
