@@ -1,8 +1,8 @@
 import React, {FC} from 'react';
 import styles from './styles.module.scss';
 import LinkText from '../../../../shared/ui/link-text';
-import BurgerButtonIcon from '../../../../shared/ui/icons/burger-icon';
 import clsx from 'clsx';
+import CloseIcon from '../../../../shared/ui/icons/close-icon';
 
 export interface IAsideProps {
   onBurgerClick: () => void;
@@ -16,7 +16,7 @@ export const Aside: FC<IAsideProps> = (props) => {
         className={styles.burgerButton}
         onClick={props.onBurgerClick}
       >
-        <BurgerButtonIcon/>
+        <CloseIcon/>
       </button>
       <div className={styles.asideRouterWrapper}>
         <LinkText href={'#'}>Репродукции</LinkText>
