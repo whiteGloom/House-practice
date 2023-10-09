@@ -1,0 +1,79 @@
+.promo {
+  position: relative;
+  width: 100%;
+  padding: 70px 0;
+  background: url("./pic_background.png") right;
+  background-size: cover;
+}
+
+.shade {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(13, 43, 67, 0.4);
+}
+
+.content {
+  position: relative;;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 30px;
+
+  @media screen and (max-width: 768px) {
+    gap: 20px;
+  }
+}
+
+.titleWrapper {
+  display: flex;
+  gap: 20px;
+  max-width: 540px;
+
+  @media screen and (max-width: 1000px) {
+    max-width: 450px;
+  }
+
+  @media screen and (max-width: 768px) {
+    max-width: 330px;
+  }
+
+  @media screen and (max-width: 620px) {
+    max-width: unset;
+  }
+}
+
+.icon {
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+}
+
+.title {
+  display: block;
+  color: #F4F6F5;
+  font-size: 40px;
+  line-height: 40px;
+  align-self: center;
+
+  @media screen and (max-width: 1000px) {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
+
+.description {
+  color: #F4F6F5;
+  max-width: 540px;
+
+  @media screen and (max-width: 1000px) {
+    max-width: unset;
+  }
+}
