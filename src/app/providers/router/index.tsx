@@ -1,10 +1,10 @@
 import React, {FC} from 'react';
-import {RouterProvider, createBrowserRouter} from 'react-router-dom';
-
+import {createBrowserRouter, RouterProvider} from 'react-router-dom';
+import {HomePage} from '../../../pages/home';
 export const appRouter = createBrowserRouter([
   {
     path: '/',
-    element: <div />,
+    element: <HomePage/>,
   },
 ]);
 
