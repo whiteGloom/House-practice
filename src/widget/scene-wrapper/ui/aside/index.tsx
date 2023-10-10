@@ -18,11 +18,13 @@ export const Aside: FC<IAsideProps> = (props) => {
       >
         <CloseIcon/>
       </button>
-      <div className={styles.asideRouterWrapper}>
-        <LinkText href={'#'}>Репродукции</LinkText>
-        <LinkText href={'#'}>Новинки</LinkText>
-        <LinkText href={'#'}>О нас</LinkText>
-      </div>
+      <nav className={styles.asideRouterWrapper}>
+        <ul className={styles.routesList}>
+          <li><LinkText href={'#'}>Репродукции</LinkText></li>
+          <li><LinkText href={'#'}>Новинки</LinkText></li>
+          <li><LinkText href={'#'}>О нас</LinkText></li>
+        </ul>
+      </nav>
     </aside>
   );
 };

@@ -1,16 +1,16 @@
 import React, {FC, PropsWithChildren} from 'react';
 import styles from './styles.module.scss';
-import Navbar from '../navbar/navbar';
-import Aside from '../aside/aside';
+import Header from '../header';
 import Footer from '../footer';
 import clsx from 'clsx';
+import Aside from '../aside';
 
 export const SceneWrapper: FC<PropsWithChildren> = (props) => {
   const [isAsideOpened, setAsideOpened] = React.useState(false);
 
   return (
     <div className={styles.wrapper}>
-      <Navbar
+      <Header
         onBurgerClick={() => {
           setAsideOpened((isAsideOpened) => {
             return !isAsideOpened;

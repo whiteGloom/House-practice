@@ -1,4 +1,4 @@
-import React, {FC} from 'react';
+import React, {FC, PropsWithChildren} from 'react';
 import styles from './styles.module.scss';
 import Logo from '../../../../shared/ui/logo';
 import LinkText, {ELinkTextTheme} from '../../../../shared/ui/link-text';
@@ -18,23 +18,29 @@ export const Footer: FC = () => {
           <LinkText href={'tel:+79995435454'}>+7 (999) 543-54-54</LinkText>
           <span className={styles.contactDetail}>Мастерская</span>
         </div>
-        <div className={clsx(styles.block, styles.origins)}>
+        <div className={clsx(styles.routesBlock, styles.origins)}>
           <span className={styles.blockTitle}>Репродукции</span>
-          <LinkText theme={ELinkTextTheme.minor}>Франция</LinkText>
-          <LinkText theme={ELinkTextTheme.minor}>Германия</LinkText>
-          <LinkText theme={ELinkTextTheme.minor}>Англия</LinkText>
+          <ul className={styles.routesTitle}>
+            <li><LinkText theme={ELinkTextTheme.minor}>Франция</LinkText></li>
+            <li><LinkText theme={ELinkTextTheme.minor}>Германия</LinkText></li>
+            <li><LinkText theme={ELinkTextTheme.minor}>Англия</LinkText></li>
+          </ul>
         </div>
-        <div className={clsx(styles.block, styles.newProductsWrapper)}>
-          <span className={styles.blockTitle}>Новинки</span>
-          <LinkText theme={ELinkTextTheme.minor}>2021</LinkText>
-          <LinkText theme={ELinkTextTheme.minor}>2020</LinkText>
+        <div className={clsx(styles.routesBlock, styles.newProductsWrapper)}>
+          <span className={styles.routesTitle}>Новинки</span>
+          <ul className={styles.routesList}>
+            <li><LinkText theme={ELinkTextTheme.minor}>2021</LinkText></li>
+            <li><LinkText theme={ELinkTextTheme.minor}>2020</LinkText></li>
+          </ul>
         </div>
-        <div className={clsx(styles.block, styles.aboutWrapper)}>
-          <span className={styles.blockTitle}>О нас</span>
-          <LinkText theme={ELinkTextTheme.minor}>Художники</LinkText>
-          <LinkText theme={ELinkTextTheme.minor}>Менеджеры</LinkText>
+        <div className={clsx(styles.routesBlock, styles.aboutWrapper)}>
+          <span className={styles.routesTitle}>О нас</span>
+          <ul className={styles.routesList}>
+            <li><LinkText theme={ELinkTextTheme.minor}>Художники</LinkText></li>
+            <li><LinkText theme={ELinkTextTheme.minor}>Менеджеры</LinkText></li>
+          </ul>
         </div>
-        <div className={clsx(styles.socialsWrapper)}>
+        <div className={styles.socialsWrapper}>
           <div className={styles.socialsIcons}>
             <LinkText href={'https://facebook.com'} className={styles.socialIcon}><FacebookLogoIcon/></LinkText>
             <LinkText href={'https://instagram.com'} className={styles.socialIcon}><InstagramLogoIcon/></LinkText>

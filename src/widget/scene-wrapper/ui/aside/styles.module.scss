@@ -33,7 +33,11 @@
 }
 
 .asideRouterWrapper {
+}
+
+.routesList {
   display: flex;
   flex-direction: column;
   gap: 50px;
+  list-style: none;
 }

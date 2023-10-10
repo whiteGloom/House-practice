@@ -125,7 +125,7 @@
   margin-right: 60px;
 }
 
-.block {
+.routesBlock {
   display: flex;
   flex-direction: column;
   gap: 6px;
@@ -139,7 +139,11 @@
   }
 }
 
-.blockTitle {
+.routesTitle {
   font-size: 20px;
   color: #2C2D35;
+}
+
+.routesList {
+  list-style: none;
 }

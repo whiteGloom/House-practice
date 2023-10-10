@@ -5,23 +5,23 @@ import LinkText from '../../../../shared/ui/link-text';
 import BurgerButtonIcon from '../../../../shared/ui/icons/burger-icon';
 import {ShoppingCartButton} from '../../../../features/shopping-cart-button';
 
-export interface INavbarProps {
+export interface IHeaderProps {
   onBurgerClick: () => void;
 }
 
-export const Navbar: FC<INavbarProps> = (props) => {
+export const Header: FC<IHeaderProps> = (props) => {
   return (
-    <nav className={styles.menu}>
+    <header className={styles.menu}>
       <div className={styles.sizeLimiter}>
         <div className={styles.logoWrapper}>
           <Logo/>
         </div>
-        <div className={styles.content}>
-          <div className={styles.routerWrapper}>
-            <LinkText href={'#'}>Репродукции</LinkText>
-            <LinkText href={'#'}>Новинки</LinkText>
-            <LinkText href={'#'}>О нас</LinkText>
-          </div>
+        <nav className={styles.content}>
+          <ul className={styles.routerWrapper}>
+            <li><LinkText href={'#'}>Репродукции</LinkText></li>
+            <li><LinkText href={'#'}>Новинки</LinkText></li>
+            <li><LinkText href={'#'}>О нас</LinkText></li>
+          </ul>
           <div className={styles.burgerMenu}>
             <button
               className={styles.burgerButton}
@@ -33,10 +33,10 @@ export const Navbar: FC<INavbarProps> = (props) => {
           <div className={styles.basketWrapper}>
             <ShoppingCartButton itemsCount={3} />
           </div>
-        </div>
+        </nav>
       </div>
-    </nav>
+    </header>
   );
 };
 
-export default Navbar;
+export default Header;
