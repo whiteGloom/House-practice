@@ -19,8 +19,8 @@ export const Footer: FC = () => {
           <span className={styles.contactDetail}>Мастерская</span>
         </div>
         <div className={clsx(styles.routesBlock, styles.origins)}>
-          <span className={styles.blockTitle}>Репродукции</span>
-          <ul className={styles.routesTitle}>
+          <span className={styles.routesTitle}>Репродукции</span>
+          <ul className={styles.routesList}>
             <li><LinkText theme={ELinkTextTheme.minor}>Франция</LinkText></li>
             <li><LinkText theme={ELinkTextTheme.minor}>Германия</LinkText></li>
             <li><LinkText theme={ELinkTextTheme.minor}>Англия</LinkText></li>
