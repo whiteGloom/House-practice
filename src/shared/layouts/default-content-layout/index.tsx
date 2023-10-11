@@ -7,7 +7,9 @@ export const DefaultContentLayout: FC<PropsWithChildren<HTMLProps<HTMLDivElement
 
   return (
     <div className={clsx([styles.layout, props.className])} {...otherProps}>
-      {props.children}
+      <div className={styles.content}>
+        {props.children}
+      </div>
     </div>
   );
 };

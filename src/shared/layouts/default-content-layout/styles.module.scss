@@ -1,6 +1,4 @@
 .layout {
-  max-width: 1110px;
-  margin: 0 auto;
   padding: 0 39px;
   box-sizing: border-box;
   width: 100%;
@@ -12,4 +10,9 @@
   @media screen and (max-width: 620px) {
     padding: 15px;
   }
+}
+
+.content {
+  max-width: 1110px;
+  margin: 0 auto;
 }
