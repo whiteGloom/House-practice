@@ -7,7 +7,7 @@ import LogoImage from './logo.jpeg';
 
 export const Team: FC = () => {
   return (
-    <DefaultContentLayout className={styles.team}>
+    <DefaultContentLayout>
       <section className={styles.content}>
           <div className={styles.imageWrapper}>
             <img src={FrameImage} alt={'An arm with brushes breaks out of the frame'} className={styles.frameImage}/>
