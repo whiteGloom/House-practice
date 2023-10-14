@@ -29,6 +29,7 @@ export const ButtonDefault: FC<IButtonDefaultProps> = (props) => {
   const {
     children,
     className,
+    isActive,
     theme = EButtonDefaultTheme.primary,
     ...otherProps
   } = props;
@@ -38,7 +39,7 @@ export const ButtonDefault: FC<IButtonDefaultProps> = (props) => {
       className={clsx([
         styles.buttonBase,
         props.useFullWidth && styles.fullWidth,
-        props.isActive && styles.isActive,
+        isActive && styles.isActive,
         getThemeClassName(theme),
         className,
       ])}

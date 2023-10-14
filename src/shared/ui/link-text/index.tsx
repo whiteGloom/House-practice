@@ -36,7 +36,7 @@ export const LinkText: FC<ILinkTextProps> = (props) => {
     <a
       className={clsx([
         styles.linkBase,
-        props.isActive && styles.isActive,
+        isActive && styles.isActive,
         getThemeClassName(theme),
         className,
       ])}
