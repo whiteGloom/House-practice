@@ -6,7 +6,7 @@
 .themePrimary
   border: none
   padding: 0 5px
-  color: #2C2D35
+  color: var(--text-color-main)
   background: transparent
   text-decoration: none
   font-size: 20px
@@ -16,17 +16,17 @@
 
   &:focus-visible, &.isActive:focus-visible
     background: var(--button-background)
-    color: #2C2D35
+    color: var(--text-color-main)
 
   &:hover, &.isActive:hover
     color: var(--text-accent-color)
 
   &:active, &.isActive:active
-    color: #376B44
+    color: var(--button-background-active)
 
 .themeMinor
   border: none
-  color: #86928B
+  color: var(--text-minor-color)
   background: transparent
   text-decoration: none
   font-size: 18px
@@ -36,13 +36,13 @@
 
   &:focus-visible, &.isActive:focus-visible
     background: var(--button-background)
-    color: black
+    color: var(--text-color-main)
 
   &:hover, &.isActive:hover
     color: var(--text-accent-color)
 
   &:active, &.isActive:active
-    color: #376B44
+    color: var(--button-background-active)
 
 
 .fullWidth

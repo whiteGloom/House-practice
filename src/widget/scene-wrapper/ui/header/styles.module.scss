@@ -33,7 +33,7 @@
   @media screen and (max-width: 768px) {
     justify-content: center;
     padding-bottom: 16px;
-    border-bottom: 1px solid #C3D1C6;
+    border-bottom: 1px solid var(--splitter-accent-color);
   }
 
   @media screen and (max-width: 620px) {

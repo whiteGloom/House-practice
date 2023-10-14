@@ -1,6 +1,6 @@
 import React, {FC, HTMLAttributes} from 'react';
-import {ReactComponent as ShoppingCartIcon} from './shopping-cart-icon.svg';
 import styles from './styles.module.sass';
+import ShoppingCartIcon from '../../../../shared/ui/icons/shopping-cart';
 
 export interface IShoppingCartButtonProps extends HTMLAttributes<HTMLButtonElement> {
   itemsCount?: number;

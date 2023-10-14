@@ -12,7 +12,7 @@
 .aside {
   display: none;
   flex-direction: column;
-  background: #E1EDE6;
+  background: var(--background-accent-color);
   position: absolute;
   width: 100vw;
   left: -105%;
@@ -30,9 +30,6 @@
 
 .asideOpened {
   left: 0;
-}
-
-.asideRouterWrapper {
 }
 
 .routesList {

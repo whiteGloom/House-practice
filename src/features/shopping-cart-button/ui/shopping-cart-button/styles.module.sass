@@ -5,27 +5,27 @@
   cursor: pointer
   transition: .2s color, .2s background, .2s stroke
 
-  *
+  .cardIcon
     transition: .2s color, .2s background, .2s stroke
-    stroke: #2C2D35
+    color: var(--text-color-main)
 
   &.isActive
-    *
-      stroke: #376B44
+    .cardIcon
+      color: var(--button-background-active)
 
   &:focus-visible, &.isActive:focus-visible
-    background: #D4E8D9
+    background: var(--button-background)
 
-    *
-      stroke: #598D66
+    .cardIcon
+      color: var(--text-accent-color)
 
   &:hover, &.isActive:hover
-    *
-      stroke: #598D66
+    .cardIcon
+      color: var(--text-accent-color)
 
   &:active, &.isActive:active
-    *
-      stroke: #376B44
+    .cardIcon
+      color: var(--button-background-active)
 
 .cardIcon
   width: 22px
@@ -34,7 +34,7 @@
 .itemsCounterWrapper
   position: absolute
   border-radius: 6px
-  background: #598D66
+  background: var(--text-accent-color)
   height: 13px
   top: 6px
   padding: 0 4px 2px
